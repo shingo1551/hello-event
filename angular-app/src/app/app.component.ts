@@ -11,5 +11,4 @@ export class AppComponent {
   onHello(e: { message: string }) {
     console.log(e)
   }
-
 }

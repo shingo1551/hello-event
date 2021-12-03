@@ -14,5 +14,4 @@ export class HelloComponent {
     console.log(e);
     this.hello.emit({ message: 'Hello Angular!' });
   }
-
 }
