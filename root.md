@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   title = 'angular-app';
@@ -25,19 +24,12 @@ export class AppComponent {
 ## React
 App.js
 ```
-import './App.css';
 import Hello from './hello/Hello'
 
 function App() {
-  const onHello = (e) => {
-    console.log(e);
-  }
+  const onHello = (e) => console.log(e);
 
-  return (
-    <div className="App">
-      <Hello onHello={onHello} />
-    </div>
-  );
+  return <Hello onHello={onHello} />
 }
 
 export default App;
@@ -88,7 +80,6 @@ import { Component, h } from '@stencil/core';
 
 @Component({
   tag: 'app-root',
-  styleUrl: 'app-root.css',
   shadow: true,
 })
 export class AppRoot {
