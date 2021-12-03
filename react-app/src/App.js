@@ -1,16 +1,9 @@
-import './App.css';
 import Hello from './hello/Hello'
 
 function App() {
-  const onHello = (e) => {
-    console.log(e);
-  }
+  const onHello = (e) => console.log(e);
 
-  return (
-    <div className="App">
-      <Hello onHello={onHello} />
-    </div>
-  );
+  return <Hello onHello={onHello} />;
 }
 
 export default App;

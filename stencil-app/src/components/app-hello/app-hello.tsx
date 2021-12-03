@@ -2,7 +2,6 @@ import { Component, h, Event, EventEmitter } from '@stencil/core';
 
 @Component({
   tag: 'app-hello',
-  styleUrl: 'app-hello.css',
   shadow: true,
 })
 export class AppHello {
