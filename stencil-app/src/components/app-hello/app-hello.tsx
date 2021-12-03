@@ -7,6 +7,10 @@ import { Component, h, Event, EventEmitter } from '@stencil/core';
 export class AppHello {
   @Event() hello: EventEmitter<{ message: string }>;
 
+  connectedCallback() {
+    console.log(this);
+  }
+
   onClick = (e: MouseEvent) => {
     console.log(e);
     this.hello.emit({ message: 'Hello Stencil!' });

@@ -11,7 +11,10 @@ export default {
     onClick(event) {
       console.log(event);
       this.$emit('hello', { message: 'hello Vue!' })
-    },
+    }
   },
+  mounted() {
+    console.log(this);
+  }
 }
 </script>

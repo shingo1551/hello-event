@@ -1,6 +1,10 @@
 import React from 'react';
 
 class Hello extends React.Component {
+  componentDidMount() {
+    console.log(this);
+  }
+
   onClick = (e) => {
     console.log(e);
     this.props.onHello({ message: 'Hello React!' });

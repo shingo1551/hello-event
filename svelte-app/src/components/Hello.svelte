@@ -1,9 +1,10 @@
 <script>
-  import { createEventDispatcher } from "svelte";
+  import { createEventDispatcher, onMount } from "svelte";
   const dispatch = createEventDispatcher();
 
+  onMount(() => console.log(this));
+
   function onClick(e) {
-    console.log(e);
     dispatch("hello", { message: "Hello Svelte!" });
   }
 </script>
