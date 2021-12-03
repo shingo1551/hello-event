@@ -13,5 +13,4 @@ export class AppRoot {
   render() {
     return <app-hello onHello={this.onHello} />;
   }
-
 }
